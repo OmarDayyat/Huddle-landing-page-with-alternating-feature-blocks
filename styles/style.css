@@ -100,7 +100,7 @@ a {
 
 .header-btn {
   background-color: #ff52bf;
-  padding: 15px 80px;
+  padding: 15px 60px;
   border-radius: 30px;
   color: white;
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -359,5 +359,159 @@ footer a:hover {
 
 .attribution a {
   color: #3e52a3;
+}
+
+/*================================================================
+                                 Media
+==================================================================*/
+@media only screen and (max-width: 1024px) {
+  /*=====================
+  General
+======================*/
+  h1 {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  /*=====================
+  Navigation Bar
+======================*/
+  .logo {
+    -webkit-transform: scale(0.6) translate(-20%);
+            transform: scale(0.6) translate(-20%);
+  }
+  .nav-btn {
+    font-size: 0.7rem;
+    padding: 10px 30px;
+  }
+  /*=====================
+  Header
+======================*/
+  .header {
+    background: url("../images/bg-hero-mobile.svg");
+    padding: 0 20px;
+    text-align: center;
+  }
+  .header-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-info-container {
+    width: 90%;
+    margin-right: 0px;
+  }
+  .header-image {
+    margin-top: 100px;
+  }
+  /*=====================
+  Cards
+======================*/
+  .card {
+    padding: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+  .first-card .image-col {
+    margin: 40px 0;
+  }
+  .first-card .image-col img {
+    float: none;
+  }
+  .second-card .image-col {
+    margin: 40px 0;
+  }
+  .second-card .image-col img {
+    float: none;
+  }
+  .third-card .image-col {
+    margin: 40px 0;
+  }
+  .third-card .image-col img {
+    float: none;
+  }
+  /*=====================
+  Floating Box Container
+======================*/
+  .floating-box {
+    right: 5%;
+    left: 5%;
+    top: 0;
+    width: 90%;
+  }
+  /*=====================
+  Footer
+======================*/
+  footer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  footer a {
+    color: #ebfbff;
+  }
+  .footer-first-col {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    padding-left: 40px;
+  }
+  .footer-second-col {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+  }
+  .footer-third-col {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+  }
+  .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .copyright-container {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+  }
+  /*=====================
+  Attribution
+======================*/
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: #3e52a3;
+  }
 }
 /*# sourceMappingURL=style.css.map */

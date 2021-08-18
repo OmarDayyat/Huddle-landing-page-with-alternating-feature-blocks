@@ -90,7 +90,7 @@ a{
 
 .header-btn{
   background-color: $Pink;
-  padding: 15px 80px;
+  padding: 15px 60px;
   border-radius: 30px;
   color: white;
   box-shadow: 0 5px 5px hsla(0, 0%, 0%,0.1);
@@ -299,4 +299,165 @@ footer{
   a {
     color: hsl(228, 45%, 44%);
   }
+}
+
+/*================================================================
+                                 Media
+==================================================================*/ 
+
+@media only screen and (max-width:1024px){
+
+/*=====================
+  General
+======================*/ 
+
+h1{
+  font-family: $font-headings;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/*=====================
+  Navigation Bar
+======================*/
+
+.logo{
+  transform: scale(0.6) translate(-20%);
+}
+
+.nav-btn{
+  font-size: 0.7rem;
+  padding: 10px 30px;
+}
+
+/*=====================
+  Header
+======================*/ 
+
+.header{
+  background: url("../images/bg-hero-mobile.svg");
+  padding: 0 20px;
+  text-align: center;
+}
+
+.header-container{
+  flex-direction: column;
+}
+
+.header-info-container{
+  width: 90%;
+  margin-right: 0px;
+}
+
+.header-image{
+  margin-top: 100px;
+}
+
+/*=====================
+  Cards
+======================*/
+
+.card{
+  padding: 50px;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+.first-card{
+  .image-col{
+    margin: 40px 0;
+    img{
+      float: none;
+    }
+  }
+}
+
+.second-card{
+  .image-col{
+    margin: 40px 0;
+    img{
+      float: none;
+    }
+  }
+}
+
+.third-card{
+  .image-col{
+    margin: 40px 0;
+
+    img{
+      float: none;
+    }
+  }
+}
+
+/*=====================
+  Floating Box Container
+======================*/ 
+
+.floating-box{
+  right: 5%;
+  left: 5%;
+  top: 0;
+  width: 90%;
+}
+
+/*=====================
+  Footer
+======================*/
+
+footer{
+  grid-template-columns:1fr;
+  a{
+    color: $Very-Pale-Cyan;
+  }
+}
+
+.footer-first-col{
+  grid-column-start: 1;
+  grid-row-start: 2;
+  padding-left: 40px;
+}
+
+
+.footer-second-col{
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+.footer-third-col{
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+
+.social-media{
+  display: flex;
+  grid-column-start: 1;
+  grid-row-start: 5;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright-container{
+  grid-column-start: 1;
+  grid-row-start: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+/*=====================
+  Attribution
+======================*/ 
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
 }
